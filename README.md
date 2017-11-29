@@ -1,5 +1,10 @@
 # MyNgDashboard
 
+Just started to play with angular.
+Wanna build a small dashboard, with a private(admin) and public part.
+Gonna start with a few components for resume display, and we'll see from there !
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.4.
 
 ## Development server
