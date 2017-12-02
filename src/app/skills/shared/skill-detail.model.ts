@@ -1,4 +1,4 @@
-export class Skill {
+export class SkillDetailsModel {
     id: number;
     label: string;
 }

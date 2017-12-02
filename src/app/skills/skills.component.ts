@@ -1,3 +1,5 @@
+import { SkillService } from './../../../../Website-Angular/src/app/services/skill.service';
+import { Skill } from './shared/skill.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  skills: Skill[];
+  skillSelected: Skill;
+
+  constructor(private skillService: SkillService) { }
 
   ngOnInit() {
+  }
+
+  onSelectSkill(skill: Skill) {
+    this.skillSelected = skill;
+  }
+
+  getSkills(): void {
+    this.skillService.getSkills()
+      .subscribe(skills => this.skills = skills);
   }
 
 }
