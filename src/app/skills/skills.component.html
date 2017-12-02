@@ -1,6 +1,17 @@
-<p>
   skills works!
-  <app-skill-list></app-skill-list>
-  <app-skill></app-skill>
-  <app-skill-admin></app-skill-admin>
-</p>
+  <div>
+    Skills.components
+    <ul>
+      <li *ngFor="let skill of skills"
+      (click)="onSelectSkill(skill)"
+      >
+        {{ skill.label}}
+      </li>
+    </ul>
+    Selected est : 
+  </div>
+  <div *ngIf="skillSelected">
+    <div *ngFor="let detail of skillSelected.details">
+      {{ detail }}
+    </div>
+  </div>

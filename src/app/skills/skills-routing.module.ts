@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
-  {path: 'skills-listing' , component: SkillListComponent},
-  {path: 'skills' , component: SkillsComponent}
+/**  { path: '', redirectTo: '/app', pathMatch: 'full' },
+  { path: 'skills', component: SkillsComponent},**/
 ];
 
 @NgModule({

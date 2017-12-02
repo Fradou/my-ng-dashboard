@@ -1,4 +1,4 @@
-import { SkillService } from './../../../../Website-Angular/src/app/services/skill.service';
+import { SkillService } from './shared/skill.service';
 import { Skill } from './shared/skill.model';
 import { Component, OnInit } from '@angular/core';
 
@@ -15,6 +15,7 @@ export class SkillsComponent implements OnInit {
   constructor(private skillService: SkillService) { }
 
   ngOnInit() {
+    this.getSkills();
   }
 
   onSelectSkill(skill: Skill) {

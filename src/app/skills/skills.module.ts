@@ -1,4 +1,3 @@
-import { SkillsRoutingModule } from './skills-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -16,12 +15,11 @@ import { SkillService } from './shared/skill.service';
     SkillsComponent
   ],
   imports: [
-    CommonModule,
-    SkillsRoutingModule
+    CommonModule
   ],
   exports: [
     SkillsComponent
   ],
-  providers: [SkillService]
+ // providers: [SkillService]
 })
 export class SkillsModule { }

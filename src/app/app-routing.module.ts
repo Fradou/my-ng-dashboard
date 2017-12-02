@@ -1,15 +1,22 @@
-import { AppComponent } from './../../../Website-Angular/src/app/app.component';
+import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { SkillsComponent } from './skills/skills.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/app', pathMatch: 'full' },
+ /** { path: '', redirectTo: '/app', pathMatch: 'full' },
   { path: 'app', component: AppComponent },
-  { path: '**', redirectTo: '/' }
+  { path: 'skills', component: SkillsComponent},
+  { path: 'projects', component: ProjectsComponent},
+  { path: 'posts', component: PostsComponent}**/
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes)
+  ],
+  exports: [
+    RouterModule
+  ]
 })
 export class AppRoutingModule { }
