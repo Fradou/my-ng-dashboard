@@ -1,5 +1,13 @@
 # MyNgDashboard
 
+Discovering angular and going to build a small dashboard with component linked to my resume, projects and posts.
+I've looked around for convention, not quite sure about some but concistency is the key.
+
+
+
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.4.
 
 ## Development server
