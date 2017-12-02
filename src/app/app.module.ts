@@ -8,21 +8,24 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { SkillsModule } from './skills/skills.module';
 import { SkillService } from './skills/shared/skill.service';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SkillsComponent
-  //  SkillComponent
   ],
   imports: [
     BrowserModule,
-  //  SkillsModule,
-    FormsModule
+    SkillsModule,
+    FormsModule,
+    AppRoutingModule
   ],
-  providers: [SkillService],
-  bootstrap: [AppComponent]
+  providers: [
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
