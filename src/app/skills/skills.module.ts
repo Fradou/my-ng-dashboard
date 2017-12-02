@@ -17,6 +17,9 @@ import { SkillAdminComponent } from './skill-admin/skill-admin.component';
   imports: [
     CommonModule,
     SkillsRoutingModule
+  ],
+  exports: [
+    SkillsComponent
   ]
 })
 export class SkillsModule { }

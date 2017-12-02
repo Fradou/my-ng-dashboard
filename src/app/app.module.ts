@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { PostsModule } from './posts/posts.module';
 import { ProjectsModule} from './projects/projects.module';
 import { SkillsModule } from './skills/skills.module';
-import { TestComponent } from './test/test.component';
 
 
 

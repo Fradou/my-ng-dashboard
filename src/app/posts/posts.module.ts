@@ -1,3 +1,4 @@
+import { PostsComponent } from './posts.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,10 +8,18 @@ import { PostAdminComponent } from './post-admin/post-admin.component';
 import { PostComponent } from './post/post.component';
 
 @NgModule({
+  declarations: [
+    PostComponent,
+    PostAdminComponent,
+    PostsComponent,
+    PostListComponent
+  ],
   imports: [
     CommonModule,
     PostsRoutingModule
   ],
-  declarations: [PostListComponent, PostAdminComponent, PostComponent]
+  exports: [
+    PostsComponent
+  ]
 })
 export class PostsModule { }
