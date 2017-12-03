@@ -10,13 +10,15 @@ import { SkillsModule } from './skills/skills.module';
 import { SkillService } from './skills/shared/skill.service';
 import { AppRoutingModule } from './app-routing.module';
 import { VaultComponent } from './vault/vault.component';
+import { HomeComponent } from './home/home.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    VaultComponent
+    VaultComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
