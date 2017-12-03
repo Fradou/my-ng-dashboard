@@ -1,17 +1,16 @@
-  skills works!
-  <div>
-    Skills.components
-    <ul>
-      <li *ngFor="let skill of skills"
+<div class="skills-container">
+  <div class="skills">
+    <div *ngFor="let skill of skills"
       (click)="onSelectSkill(skill)"
       >
         {{ skill.label}}
-      </li>
-    </ul>
-    Selected est : 
-  </div>
-  <div *ngIf="skillSelected">
-    <div *ngFor="let detail of skillSelected.details">
-      {{ detail }}
     </div>
   </div>
+  <div class="skill-details">
+    <div *ngIf="skillSelected">
+      <div *ngFor="let detail of skillSelected.details">
+        {{ detail }}
+      </div>
+    </div>
+  </div>
+</div>
