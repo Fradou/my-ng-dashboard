@@ -7,9 +7,9 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SkillsModule } from './skills/skills.module';
-import { SkillService } from './skills/shared/skill.service';
 import { AppRoutingModule } from './app-routing.module';
 import { VaultComponent } from './vault/vault.component';
+import { HomeModule} from './home/home.module';
 import { HomeComponent } from './home/home.component';
 
 
@@ -17,14 +17,13 @@ import { HomeComponent } from './home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    VaultComponent,
-    HomeComponent
+    VaultComponent
   ],
   imports: [
     BrowserModule,
-    SkillsModule,
+    HomeModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [
   ],

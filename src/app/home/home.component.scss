@@ -1,0 +1,14 @@
+.container {
+    display:grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.container div {
+    color:red;
+    border:1px solid black;
+    height: 40vh;
+
+}

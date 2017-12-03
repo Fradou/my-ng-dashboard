@@ -20,6 +20,7 @@ import { SkillService } from './shared/skill.service';
     SkillsRoutingModule
   ],
   exports: [
+    SkillsComponent
   ],
   providers: [
     SkillService
