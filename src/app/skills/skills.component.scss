@@ -15,4 +15,14 @@
         justify-content: center;
         flex-direction: column;
     }
+    .selected {
+        border-color:blueviolet;
+        border-width: 5px 0px 5px 20px;
+    }
+}
+
+.skills div {
+    border: solid green;
+    border-width: 5px 5px 5px 20px;
+    border-radius: 50px 0 0 50px;
 }
