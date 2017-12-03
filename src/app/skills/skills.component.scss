@@ -25,9 +25,11 @@
 
 .skills div {
     border: solid $primary-color;// rgb(10, 95, 10);
-    border-width: 5px 5px 5px 20px;
+    border-width: 10px 5px 10px 20px;
     border-radius: 50px 0 0 50px;
-    :hover {
-        border-color: yellow;
-    }
+    margin:1px 0px;
+}
+
+.skills div:hover {
+    border-color: yellow;
 }
