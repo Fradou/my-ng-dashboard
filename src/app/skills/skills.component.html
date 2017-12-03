@@ -1,0 +1,17 @@
+  skills works!
+  <div>
+    Skills.components
+    <ul>
+      <li *ngFor="let skill of skills"
+      (click)="onSelectSkill(skill)"
+      >
+        {{ skill.label}}
+      </li>
+    </ul>
+    Selected est : 
+  </div>
+  <div *ngIf="skillSelected">
+    <div *ngFor="let detail of skillSelected.details">
+      {{ detail }}
+    </div>
+  </div>
