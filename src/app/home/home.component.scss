@@ -2,8 +2,14 @@
     display:grid;
 
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-gap: 50px;
+
+    grid-template-areas: 
+    "header header"
+    "app_1 app_2"
+    "app_3 app_4"
+    "footer footer";
+
 }
 
 .container div {
@@ -12,3 +18,29 @@
     height: 40vh;
 
 }
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+#home_app_1 {
+    grid-area: app_1;
+}
+
+#home_app_2 {
+    grid-area: app_2;
+}
+
+#home_app_3 {
+    grid-area: app_3;
+}
+
+#home_app_4 {
+    grid-area: app_4;
+}
+
+
