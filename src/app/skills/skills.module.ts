@@ -8,20 +8,17 @@ import { SkillListComponent } from './skill-list/skill-list.component';
 import { SkillAdminComponent } from './skill-admin/skill-admin.component';
 import { SkillService } from './shared/skill.service';
 
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import {RatingModule} from 'primeng/primeng';
 
 @NgModule({
   declarations: [
     SkillComponent,
     SkillListComponent,
     SkillAdminComponent,
-    SkillsComponent
+    SkillsComponent,
   ],
   imports: [
     CommonModule,
-    SkillsRoutingModule,
-    AngularFontAwesomeModule
+    SkillsRoutingModule
   ],
   exports: [
     SkillsComponent

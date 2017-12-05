@@ -1,11 +1,12 @@
 <div class="skills-container">
   <div class="skills">
-    <button *ngFor="let skill of skills"
+    <button type="button" *ngFor="let skill of skills"
       [class.selected]="skill===skillSelected"
       (click)="onSelectSkill(skill)"
       >
         {{ skill.label | uppercase}}
     </button>
+    <button pbutton>plop</button>
   </div>
   <div class="skill-details">
     <div *ngIf="skillSelected">
@@ -13,5 +14,7 @@
         {{ detail }}
       </div>
     </div>
+    <button pButton type="button" label="Click"></button>
   </div>
 </div>
+
