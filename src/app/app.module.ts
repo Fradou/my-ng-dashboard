@@ -31,6 +31,9 @@ import { MatButtonModule } from '@angular/material';
     NoopAnimationsModule,
     MatButtonModule
   ],
+  exports: [
+    MatButtonModule
+  ],
   providers: [
   ],
   bootstrap: [
