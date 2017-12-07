@@ -8,7 +8,6 @@ import { SkillListComponent } from './skill-list/skill-list.component';
 import { SkillAdminComponent } from './skill-admin/skill-admin.component';
 import { SkillService } from './shared/skill.service';
 
-
 @NgModule({
   declarations: [
     SkillComponent,
