@@ -13,8 +13,7 @@ import { VaultComponent } from './vault/vault.component';
 import { HomeModule} from './home/home.module';
 import { HomeComponent } from './home/home.component';
 
-import { MatButtonModule } from '@angular/material';
-
+import { CustomMaterialModule } from './core/custom-material.module';
 
 
 @NgModule({
@@ -29,10 +28,10 @@ import { MatButtonModule } from '@angular/material';
     AppRoutingModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
-    MatButtonModule
+    CustomMaterialModule
   ],
   exports: [
-    MatButtonModule
+    CustomMaterialModule
   ],
   providers: [
   ],

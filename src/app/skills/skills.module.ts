@@ -8,6 +8,8 @@ import { SkillListComponent } from './skill-list/skill-list.component';
 import { SkillAdminComponent } from './skill-admin/skill-admin.component';
 import { SkillService } from './shared/skill.service';
 
+import { CustomMaterialModule } from '../core/custom-material.module';
+
 @NgModule({
   declarations: [
     SkillComponent,
@@ -17,7 +19,8 @@ import { SkillService } from './shared/skill.service';
   ],
   imports: [
     CommonModule,
-    SkillsRoutingModule
+    SkillsRoutingModule,
+    CustomMaterialModule
   ],
   exports: [
     SkillsComponent
