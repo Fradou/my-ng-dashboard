@@ -9,7 +9,7 @@
   </div>
   <div class="skill-details">
     <div *ngIf="skillSelected">
-      <div *ngFor="let detail of skillSelected.details">
+      <div [appHighlight]="'green'" *ngFor="let detail of skillSelected.details">
         {{ detail }}
       </div>
     </div>

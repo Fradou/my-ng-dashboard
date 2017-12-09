@@ -13,17 +13,19 @@ import { VaultComponent } from './vault/vault.component';
 import { HomeModule} from './home/home.module';
 import { HomeComponent } from './home/home.component';
 
-import { CustomMaterialModule } from './core/custom-material.module';
+import { CustomMaterialModule } from './shared/custom-material.module';
+import { CoreModule } from './core/core.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     VaultComponent
-  ],
+],
   imports: [
     BrowserModule,
     HomeModule,
+    CoreModule,
     FormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,

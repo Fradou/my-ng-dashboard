@@ -15,6 +15,7 @@
     border:1px solid black;
     height: 40vh;
     min-height:600px;
+    position:relative;
 }
 
 header {
@@ -41,4 +42,9 @@ footer {
     grid-area: app_4;
 }
 
+.zoomIn {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
 

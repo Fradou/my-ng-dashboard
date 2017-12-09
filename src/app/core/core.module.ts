@@ -6,6 +6,11 @@ import { HighlightDirective } from './highlight.directive';
   imports: [
     CommonModule
   ],
-  declarations: [HighlightDirective]
+  declarations: [
+    HighlightDirective
+  ],
+  exports: [
+    HighlightDirective
+  ]
 })
 export class CoreModule { }
