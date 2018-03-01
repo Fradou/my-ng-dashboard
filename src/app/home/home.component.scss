@@ -1,0 +1,57 @@
+.container {
+    height:100%;
+    display:grid;
+
+
+    grid-template-rows: 150px auto auto 150px;
+    grid-template-columns: [main-start] 1fr 1fr [main-stop];
+    grid-gap: 50px;
+
+    &.zoomed {
+        grid-template-rows: 150px auto 150px;
+        grid-template-columns: [main-start] 1fr [main-stop];
+    }
+}
+
+
+
+.container > .home_app {
+    border:1px solid black;
+    min-height:600px;
+    position:relative;
+    &.zoomed {
+        height:100%;
+    }
+    &.hidden {
+        display: none;
+    }
+}
+
+header {
+    grid-column-start: main-start;
+    grid-column-end: main-stop;
+    background-color:red;
+}
+
+footer {
+    grid-column-start: main-start;
+    grid-column-end: main-stop;
+    background-color:yellow;
+}
+
+.zoomInBtn {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.zoomOutBtn {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.zoomed {
+    border: 5px solid black !important;
+}
+
