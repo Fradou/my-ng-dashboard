@@ -1,14 +1,34 @@
-<div class="container">
+<div class="container"
+[class.zoomed]="fullScreenApp!=0">
   <header>Header au top</header>
-  <div class="home_app" id="app_1">
+  <div class="home_app" id="app_1"
+  [class.zoomed]="fullScreenApp==1"
+  [class.hidden]="fullScreenApp!=0 && fullScreenApp !=1"  
+  >
     <app-skills></app-skills>
+    <button class="zoomOutBtn" (click)="resetScreen()">Retour</button>
+    <button class="zoomInBtn" (click)="onFullScren(1)">Test</button>
   </div>
-  <div class="home_app" id="app_2">
+  <div class="home_app" id="app_2"
+  [class.zoomed]="fullScreenApp==2"
+  [class.hidden]="fullScreenApp!=0 && fullScreenApp !=2"  
+  >
+
+    <button class="zoomInBtn" (click)="onFullScren(2)">Test</button>
   </div>
-  <div class="home_app" id="app_3">
+  <div class="home_app" id="app_3"
+  [class.zoomed]="fullScreenApp==3"
+  [class.hidden]="fullScreenApp!=0 && fullScreenApp !=3"
+  >
+
+    <button class="zoomInBtn" (click)="onFullScren(3)">Test</button>
   </div>
-  <div class="home_app" id="app_4">
+  <div class="home_app" id="app_4"
+  [class.zoomed]="fullScreenApp==4"
+  [class.hidden]="fullScreenApp!=0 && fullScreenApp !=4"  
+    >
     bla
+    <button class="zoomInBtn" (click)="onFullScren(4)">Test</button>
   </div>
   <footer></footer>
 </div>

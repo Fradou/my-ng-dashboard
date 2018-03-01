@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  public fullScreenApp = 0 ;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onFullScren(position: number) {
+    this.fullScreenApp = position;
+    console.log('position changed');
+  }
+
+  resetScreen() {
+    this.fullScreenApp = 0;
   }
 
 }

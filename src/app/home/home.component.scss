@@ -1,46 +1,57 @@
 .container {
+    height:100%;
     display:grid;
 
-    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: 150px auto auto 150px;
+    grid-template-columns: [main-start] 1fr 1fr [main-stop];
     grid-gap: 50px;
 
-    grid-template-areas: 
-    "header header"
-    "app_1 app_2"
-    "app_3 app_4"
-    "footer footer";
-
+    &.zoomed {
+        grid-template-rows: 150px auto 150px;
+        grid-template-columns: [main-start] 1fr [main-stop];
+    }
 }
 
-.container div {
-    color:red;
-    border:1px solid black;
-    height: 40vh;
 
+
+.container > .home_app {
+    border:1px solid black;
+    min-height:600px;
+    position:relative;
+    &.zoomed {
+        height:100%;
+    }
+    &.hidden {
+        display: none;
+    }
 }
 
 header {
-    grid-area: header;
+    grid-column-start: main-start;
+    grid-column-end: main-stop;
+    background-color:red;
 }
 
 footer {
-    grid-area: footer;
+    grid-column-start: main-start;
+    grid-column-end: main-stop;
+    background-color:yellow;
 }
 
-#home_app_1 {
-    grid-area: app_1;
+.zoomInBtn {
+    position:absolute;
+    bottom: 0;
+    right: 0;
 }
 
-#home_app_2 {
-    grid-area: app_2;
+.zoomOutBtn {
+    position:absolute;
+    bottom: 0;
+    left: 0;
 }
 
-#home_app_3 {
-    grid-area: app_3;
+.zoomed {
+    border: 5px solid black !important;
 }
-
-#home_app_4 {
-    grid-area: app_4;
-}
-
 

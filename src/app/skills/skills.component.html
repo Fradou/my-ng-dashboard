@@ -1,17 +1,18 @@
-  skills works!
-  <div>
-    Skills.components
-    <ul>
-      <li *ngFor="let skill of skills"
+<div class="skills-container">
+  <div class="skills">
+    <button mat-button type="button" *ngFor="let skill of skills"
+      [class.selected]="skill===skillSelected"
       (click)="onSelectSkill(skill)"
       >
-        {{ skill.label}}
-      </li>
-    </ul>
-    Selected est : 
+        {{ skill.label | uppercase}}
+    </button>
   </div>
-  <div *ngIf="skillSelected">
-    <div *ngFor="let detail of skillSelected.details">
-      {{ detail }}
+  <div class="skill-details">
+    <div *ngIf="skillSelected">
+      <div [appHighlight]="'green'" *ngFor="let detail of skillSelected.details">
+        {{ detail }}
+      </div>
     </div>
   </div>
+</div>
+
