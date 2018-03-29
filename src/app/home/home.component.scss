@@ -1,11 +1,10 @@
 .container {
     height:100%;
     display:grid;
-
-
     grid-template-rows: 150px auto auto 150px;
     grid-template-columns: [main-start] 1fr 1fr [main-stop];
     grid-gap: 50px;
+    transition: all 2s;
 
     &.zoomed {
         grid-template-rows: 150px auto 150px;
@@ -19,8 +18,11 @@
     border:1px solid black;
     min-height:600px;
     position:relative;
+    transition: height 2s;
     &.zoomed {
         height:100%;
+        min-height:1250px;
+        transition: 2s;       
     }
     &.hidden {
         display: none;
@@ -49,9 +51,5 @@ footer {
     position:absolute;
     bottom: 0;
     left: 0;
-}
-
-.zoomed {
-    border: 5px solid black !important;
 }
 
