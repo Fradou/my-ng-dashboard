@@ -1,11 +1,10 @@
 .container {
     height:100%;
     display:grid;
-
-
     grid-template-rows: 150px auto auto 150px;
     grid-template-columns: [main-start] 1fr 1fr [main-stop];
     grid-gap: 50px;
+    transition: all 2s;
 
     &.zoomed {
         grid-template-rows: 150px auto 150px;
